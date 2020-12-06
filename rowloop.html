@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+
+	<canvas id="sketch" width="400" height="400">
+
+	</canvas>
+
+	<script>
+		function draw() {
+		 	var sketch = document.getElementById('sketch');
+			var context = sketch.getContext("2d");
+			context.fillStyle = "#FFC0CB";
+
+      for (i = 0; i <= 4; i++) {
+
+          context.fillStyle = "	#ff0000"
+
+          context.beginPath();
+          context.arc((i * 25 + 10), 15, 10, 0, 2 * Math.PI, true);
+          context.closePath();
+          context.fill();
+          
+			}
+		}
+
+	</script>
+
+</body>
